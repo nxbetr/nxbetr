@@ -12,7 +12,7 @@ public class ArrayExam {
 //		System.out.println("총합 : " + sum);
 //	}
 //	
-	
+
 //		int[] scores = {83, 90 , 87};
 //		
 //		System.out.println("scores[0] : " + scores[0]);
@@ -26,24 +26,26 @@ public class ArrayExam {
 //		System.out.println("총합 :" + sum);
 //		double avg = (double) sum /3;
 //		System.out.println("평균 : " + avg);
-		
-		
-		//최대 최소값 구하기
-		int[] ary2 = {3,6,2,4,7};
-		
+
+		// 최대 최소값 구하기
+		int[] ary2 = { 3, 6, 2, 4, 7 };
+
 		int max = 0;
 		int min = ary2[0];
-		
-		for(int i=0; i<ary2.length; i++) {
-			if(max < ary2[i]) {
+
+		for (int i = 0; i < ary2.length; i++) {
+			// 최대값
+			if (max < ary2[i]) {
 				max = ary2[i];
 			}
-			if(min > ary2[i]) {
+			// 최소값
+			if (min > ary2[i]) {
 				min = ary2[i];
-				
+
 			}
 		}
 		System.out.println(max);
 		System.out.println(min);
-}
+
+	}
 }
