@@ -3,7 +3,10 @@ package co.edu.homework;
 public class Student {
 //필드
 
-	int num;
+	// field
+	// 학생정보, 학번 이름 국어 수학 영어
+
+	int stuNum;
 	String name;
 	int kor;
 	int math;
@@ -11,21 +14,24 @@ public class Student {
 	double avg;
 
 	// 생성자
+	// 기본 생성자를 만든 후 인스턴스에 데이터 입력
+
 	public Student() {
-	}
-
-	Student(int num, String name, int kor, int math, int eng) {
 
 	}
+	
+	
 
-	// 메소드 학번, 이름, 국어, 수학, 영어)
-	void getInfo() {
+	// 메소드
+	// 학생 기본 정보 출력, 학번 이름 국어 수학 영어
+	// 평균 점수 출력
+
+	void info() {
+
+		System.out.println("학번:" + stuNum + " " + "이름:" + name + " " + "국어:" + kor + "점 " + "수학:" + math + "점 " + "영어:"
+				+ eng + "점");
+		double avg = (double) (kor + math + eng) / 3;
 		
-		System.out.println("학번 :" + num+" " + "이름 :" + name+" " + "국어 :" + kor+" " + "수학 :" + math+" " + "영어 :" + eng);
-		double avg = kor+eng+math;
-		System.out.println("평균 점수 : " + avg/3);
-		
-		
+		System.out.println(name + "평균 점수: " + avg + "점");
 	}
-
 }
