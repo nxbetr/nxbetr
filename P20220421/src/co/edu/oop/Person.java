@@ -3,7 +3,7 @@ package co.edu.oop;
 public class Person {
 // 1 필드
 	// 주민번호 이름 주소 나이
-	int num;
+	String num;
 	String name;
 	String add;
 	int age;
@@ -13,7 +13,7 @@ public class Person {
 	}
 
 	// 주민번호 이름 주소 나이를 매개변수로
-	public Person(int num, String name, String add, int age) {
+	public Person(String num, String name, String add, int age) {
 		this.num = num;
 		this.name = name;
 		this.add = add;
@@ -22,7 +22,7 @@ public class Person {
 	}
 
 	void introduce() {
-
+		
 		int num = 45345;
 		System.out.println(num);
 		String name = "김자바";
