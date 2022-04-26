@@ -1,0 +1,17 @@
+package com.yedam.java.ch08_02;
+
+public class Bus implements Vehicle {
+
+	@Override
+	public void run() {
+		System.out.println("버스가 달립니다.");
+	}
+
+	//버스만 가지는 고유한 method
+	public void checkFare() {
+		System.out.println("승차 요금을 체크합니다.");
+		
+	}
+	
+	
+}
