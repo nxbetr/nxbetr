@@ -14,5 +14,5 @@ public interface Keypad {
 
 	public abstract void rightDownButton();
 
-	public abstract void changeMode();
+	public void changeMode();
 }
